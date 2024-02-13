@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+    <head>
+        <!--Titel Website-->
+        <title>CO²-Footprint</title>
+        
+        <!--Verbindung mit CSS-Datei-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--Einbindung Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2/dist/css/bootstrap.min.css">
+
+        <!--Einbindung jQuery Tabelle-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <!--Einbindung DataTables zur Sortierung und Filterung-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+        <!-- Einbindung Icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="CO²-Footprint.png" style="width: 80px;">
+                    <span class="navbar-brand mb-0 h1">CO²-Footprint</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Content-Bereich-->
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://www.facebook.com/?locale=de_DE" class="fa fa-facebook"></a>
+            </nav>
+        </header>
+
+            <!--Local Links-->
+            <div class="container mt-5">
+                <div class="row">
+                <div class="col-md-3">
+                    <h5>Local Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 3</a>
+                        </li>
+                    </ul>
+            </div>
+
+            <!--Tabelle CO2-Emission Data-->
+            <div class="col-md-9">
+                <h1>CO²-Emission Data</h1>
+                <p class ="bg-white text-dark">Only 20 companies are responsible for a third of global CO² and methane emissions, according to a new data analysis. 
+                    These are mainly well-known players in the oil and gas industry. The biggest climate offenders since 1965, their emissions in CO² equivalents and share of global emissions in per cent.</p>
+                <table id="myTable" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>Company</th>
+                            <th>CO²-Emissions (MtCO²e)</th>
+                            <th>% of global</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Saudi Arabia</td>
+                            <td>Saudi Aramco</td>
+                            <td>59,262</td>
+                            <td>4.38%</td>
+                        </tr>
+                        <tr>
+                            <td>USA</td>
+                            <td>Chevron</td>
+                            <td>43,345</td>
+                            <td>3.20%</td>
+                        </tr>
+                        <tr>
+                            <td>Russia</td>
+                            <td>Gazprom</td>
+                            <td>43,230</td>
+                            <td>3.19%</td>
+                        </tr>
+                        <tr>
+                            <td>USA</td>
+                            <td>ExxonMobil</td>
+                            <td>41,904</td>
+                            <td>3.09%</td>
+                        </tr>
+                        <tr>
+                            <td>Iran</td>
+                            <td>National Iranian Oil Co.</td>
+                            <td>35,658</td>
+                            <td>2.63%</td>
+                        </tr>
+                        <tr>
+                            <td>United Kingdom</td>
+                            <td>BP</td>
+                            <td>34,015</td>
+                            <td>2.51%</td>
+                        </tr>
+                        <tr>
+                            <td>Netherlands</td>
+                            <td>Royal Dutch Shell</td>
+                            <td>31,948</td>
+                            <td>2.36%</td>
+                        </tr>
+                        <tr>
+                            <td>India</td>
+                            <td>Coal India</td>
+                            <td>23,124</td>
+                            <td>1.71%</td>
+                        </tr>
+                        <tr>
+                            <td>Mexico</td>
+                            <td>Pemex</td>
+                            <td>22,645</td>
+                            <td>1.67%</td>
+                        </tr>
+                        <tr>
+                            <td>Venezuela</td>
+                            <td>Petroleos de Venezuela</td>
+                            <td>15,745</td>
+                            <td>1.16%</td>
+                        </tr>
+                        <tr>
+                            <td>China</td>
+                            <td>Petro China</td>
+                            <td>15,632</td>
+                            <td>1.15%</td>
+                        </tr>
+                        <tr>
+                            <td>USA</td>
+                            <td>Peabody Energy</td>
+                            <td>15,385</td>
+                            <td>1.14%</td>
+                        </tr>
+                        <tr>
+                            <td>USA</td>
+                            <td>ConocoPhillips</td>
+                            <td>15,229</td>
+                            <td>1.12%</td>
+                        </tr>
+                        <tr>
+                            <td>United Arab Emirates</td>
+                            <td>Abu Dhabi</td>
+                            <td>13,840</td>
+                            <td>1.01%</td>
+                        </tr>
+                        <tr>
+                            <td>Kuwait</td>
+                            <td>Kuwait Petroleum Corp.</td>
+                            <td>13,479</td>
+                            <td>1.00%</td>
+                        </tr>
+                        <tr>
+                            <td>Iraq</td>
+                            <td>Iraq National Oil Co.</td>
+                            <td>12,596</td>
+                            <td>0.93%</td>
+                        </tr>
+                        <tr>
+                            <td>France</td>
+                            <td>Total SA</td>
+                            <td>12,352</td>
+                            <td>0.91%</td>
+                        </tr>
+                        <tr>
+                            <td>Algeria</td>
+                            <td>Sonatrach</td>
+                            <td>12,302</td>
+                            <td>0.91%</td>
+                        </tr>
+                        <tr>
+                            <td>Australia</td>
+                            <td>BHP Billiton</td>
+                            <td>9,802</td>
+                            <td>0.72%</td>
+                        </tr>
+                        <tr>
+                            <td>Brazil</td>
+                            <td>Petrobas</td>
+                            <td>8,676</td>
+                            <td>0.64%</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Top Twenty</td>
+                            <td></td>
+                            <td>480,168</td>
+                            <td>35.45%</td>
+                        </tr>
+                        <tr>
+                            <td>Global</td>
+                            <td></td>
+                            <td>1,354,388</td>
+                            <td>100.00%</td>
+                        </tr> 
+                    </tfoot>
+                </table>
+
+                <!--Aktivierung Sortier- und Filterfunktion DataTables-->
+                <script>
+                    $(document).ready( function () {
+                        $('#myTable').DataTable();
+                    } );
+                </script>
+            </div>
+
+            <!--Style Quelle Grafik-->
+            <style>
+                .text-right{
+                    text-align: right;
+                }
+            </style>
+
+            <!--Quelle Daten Grafik-->
+            <p class="text-right" class="bg-white text-dark">Graphic: © Climate Accountability Institute </p>
+    
+            <!--Login-Bereich Nutzer-->
+            <h5 class="mt-3">LOGIN</h5>
+                <form>
+                    <div class="col-md-3 flex-grow-1">
+                        <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="col-md-3 flex-grow-1">
+                        <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+            <!--Footer mit rechlichen Hinweisen-->
+            <footer class="bg-dark text-white mt-5 p-3">
+                <div class="container text-center">
+                    <p> &copy; CO2-Footprint</p>
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Legal notice</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Privacy policy</a>
+                            </li>
+                        </ul>
+                    <p>developed by Bastian Köstner</p>
+                </div>
+            </footer>
+
+    </body>
+
+</html>
